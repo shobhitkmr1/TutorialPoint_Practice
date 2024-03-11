@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array map</title>
+</head>
+<body>
+    <div id="output">The new array is </div>
+    <script>
+        const arr=[1,2,3,4,5];
+        function doubleEle(element){
+            return element*2;
+        }
+        document.getElementById("output").innerHTML+=arr.map(doubleEle);
+    </script>
+</body>
+</html>

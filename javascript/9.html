@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array reduceRight()</title>
+</head>
+<body>
+    <div id="output">The  merged array elements in the reverse order is : </div>
+    <script>
+        const arr = ["how","are","you","doing?"];
+        function merge(res,element){
+            return res+=element+" ";
+        }
+        document.getElementById("output").innerHTML+=arr.reduceRight(merge);
+    </script>
+</body>
+</html>
